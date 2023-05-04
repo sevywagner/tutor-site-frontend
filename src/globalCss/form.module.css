@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 3vh;
+    padding: 1.5vh;
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-size: 2.5vh;
+    font-family: 'Roboto Mono';
+    border-bottom: 3px solid black;
+}
+
+input:focus {
+    outline: none;
+    animation: focus .2s ease-in-out;
+    border-bottom: 3px solid green;
+}
+
+label {
+    font-family: 'Tajawal';
+    font-size: 4vh;
+}
+
+input:only-of-type("file") {
+    border-radius: 10vh;
+}
+
+select {
+    padding: 2vh;
+    margin: 2vh;
+    background-color: inherit;
+    border-radius: 4vh;
+    font-size: 2.2vh;
+}
+
+@keyframes focus {
+    from {
+        border-bottom: 3px solid black;
+    }
+
+    to {
+        border-bottom: 3px solid green;
+    }
+}
