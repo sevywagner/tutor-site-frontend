@@ -1,4 +1,4 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState } from "react";
 import { authContext } from "../store/context/AuthContext";
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,8 @@ import Button from "../components/util/Button";
 
 const SignIn = () => {
     const navigate = useNavigate();
+
+    const [error, setError] = useState();
 
     const usernameRef = useRef();
     const passwordRef = useRef();
@@ -37,6 +39,7 @@ const SignIn = () => {
             const data = await response.json();
             if (error) {
                 console.log(data.error);
+                setError(data.error);
             } else {
                 console.log(data);
                 authCtx.login(data.token, data.expiration);
@@ -50,6 +53,7 @@ const SignIn = () => {
     return (
         <div>
             <p className={mainStyles.title}>Sign In</p>
+            {error && <p>{error}</p>}
             <div className={styles['form-wrap']}>
                 <form className={styles.form} onSubmit={submitHandler}>
                     <label>Username</label>

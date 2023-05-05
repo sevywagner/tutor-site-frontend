@@ -6,8 +6,7 @@ import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgotPassword";
 import ResetPassword from "../pages/ResetPassword";
 import UploadNotes from "../pages/admin/UploadNotes";
-import Notes, { loader } from "../pages/Notes";
-import DownloadNote from "../pages/DownloadNote";
+import Notes from "../pages/Notes";
 
 const router = createBrowserRouter([
     {
@@ -43,10 +42,6 @@ const router = createBrowserRouter([
                 path: 'notes',
                 element: <Notes />,
                 loader: () => import('./../pages/Notes').then((module) => module.loader())
-            },
-            {
-                path: 'note/:noteId',
-                element: <DownloadNote />
             }
         ]
     }
