@@ -44,7 +44,7 @@ const SignUp = () => {
                 console.log(data.error);
             } else {
                 setError(null);
-                navigate('/');
+                navigate('/tutor-site-frontend');
                 console.log(data.message);
             }
         } catch(err) {
