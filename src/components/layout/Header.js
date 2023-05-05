@@ -17,9 +17,9 @@ const Header = () => {
         <header>
             <nav>
                 <Link className={styles['nav-item']} to='/'>Home</Link>
-                {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/sign-in'>Sign In</Link>}
-                {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/sign-up'>Sign Up</Link>}
-                {localStorage.getItem('token') && <Link className={styles['nav-item']} to='/notes'>Notes</Link>}
+                {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/sign-in'>Sign In</Link>}
+                {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/sign-up'>Sign Up</Link>}
+                {localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/notes'>Notes</Link>}
                 {localStorage.getItem('token') && <button className={styles['nav-button']} onClick={logoutHandler}>Logout</button>}
             </nav>
         </header>
