@@ -23,7 +23,7 @@ const SignIn = () => {
 
         let error = false;
         try {
-            const response = await fetch('http://localhost:8080/auth/login', {
+            const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/auth/login', {
                 method: 'POST',
                 body: JSON.stringify({
                     username: usernameRef.current.value,

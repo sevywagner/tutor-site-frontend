@@ -15,7 +15,7 @@ const ResetPassword = () => {
         event.preventDefault();
 
         let error = false;
-        const response = await fetch('http://localhost:8080/auth/reset-password', {
+        const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/auth/reset-password', {
             method: 'POST',
             body: JSON.stringify({
                 password: passwordRef.current.value,

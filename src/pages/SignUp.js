@@ -22,7 +22,7 @@ const SignUp = () => {
 
         let error = false;
         try {
-            const response = await fetch('http://localhost:8080/auth/signup', {
+            const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/auth/signup', {
                 method: 'PUT',
                 body: JSON.stringify({
                     name: nameRef.current.value,

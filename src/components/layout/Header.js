@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <Link className={styles['nav-item']} to='/'>Home</Link>
+                <Link className={styles['nav-item']} to='/tutor-site-frontend'>Home</Link>
                 {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/sign-in'>Sign In</Link>}
                 {!localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/sign-up'>Sign Up</Link>}
                 {localStorage.getItem('token') && <Link className={styles['nav-item']} to='/tutor-site-frontend/notes'>Notes</Link>}
