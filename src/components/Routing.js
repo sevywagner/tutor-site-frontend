@@ -10,7 +10,7 @@ import Notes from "../pages/Notes";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: '/tutor-site-frontend',
         element: <Layout />,
         children: [
             {
