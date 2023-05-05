@@ -43,7 +43,7 @@ const SignIn = () => {
             } else {
                 console.log(data);
                 authCtx.login(data.token, data.expiration);
-                navigate('/');
+                navigate('/tutor-site-frontend');
             }
         } catch(err) {
             console.log(err);

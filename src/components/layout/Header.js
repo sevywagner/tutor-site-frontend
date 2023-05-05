@@ -10,7 +10,7 @@ const Header = () => {
 
     const logoutHandler = () => {
         authCtx.logout();
-        navigate('/');
+        navigate('/tutor-site-frontend');
     }
 
     return (
