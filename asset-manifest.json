@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tutor-site-frontend/static/css/main.4e6d48c1.css",
-    "main.js": "/tutor-site-frontend/static/js/main.7b2821b3.js",
+    "main.js": "/tutor-site-frontend/static/js/main.c67b3444.js",
     "index.html": "/tutor-site-frontend/index.html",
     "main.4e6d48c1.css.map": "/tutor-site-frontend/static/css/main.4e6d48c1.css.map",
-    "main.7b2821b3.js.map": "/tutor-site-frontend/static/js/main.7b2821b3.js.map"
+    "main.c67b3444.js.map": "/tutor-site-frontend/static/js/main.c67b3444.js.map"
   },
   "entrypoints": [
     "static/css/main.4e6d48c1.css",
-    "static/js/main.7b2821b3.js"
+    "static/js/main.c67b3444.js"
   ]
 }
