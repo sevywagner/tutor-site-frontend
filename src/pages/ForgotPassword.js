@@ -9,7 +9,7 @@ const ForgotPassword = () => {
 
         let error = false;
         try {
-            const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/auth/request-reset-link', {
+            const response = await fetch('https://tutor-site-rest-api.herokuapp.com/auth/request-reset-link', {
                 method: 'POST',
                 body: JSON.stringify({ email: emailRef.current.value }),
                 headers: {

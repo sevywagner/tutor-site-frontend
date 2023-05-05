@@ -20,7 +20,7 @@ const UploadNotes = () => {
         formData.append('mimeType', 'pdf');
 
         let error = false;
-        fetch('https://sevywagner.github.io/tutor-site-frontend/notes/upload', {
+        fetch('https://tutor-site-rest-api.herokuapp.com/notes/upload', {
             method: 'PUT',
             body: formData,
             headers: {
@@ -77,7 +77,7 @@ const UploadNotes = () => {
 }
 
 export const loader = async () => {
-    const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/admin/get-users', {
+    const response = await fetch('https://tutor-site-rest-api.herokuapp.com/admin/get-users', {
         method: 'GET'
     });
     const data = await response.json();

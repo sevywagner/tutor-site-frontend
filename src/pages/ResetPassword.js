@@ -15,7 +15,7 @@ const ResetPassword = () => {
         event.preventDefault();
 
         let error = false;
-        const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/auth/reset-password', {
+        const response = await fetch('https://tutor-site-rest-api.herokuapp.com/auth/reset-password', {
             method: 'POST',
             body: JSON.stringify({
                 password: passwordRef.current.value,

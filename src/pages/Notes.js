@@ -11,7 +11,7 @@ const Notes = () => {
 
     const submitHandler = ([noteId, fileName]) => {
         console.log(noteId);
-        fetch('https://sevywagner.github.io/tutor-site-frontend/notes/get-note-file', {
+        fetch('https://tutor-site-rest-api.herokuapp.com/notes/get-note-file', {
             method: 'POST',
             body: JSON.stringify({ noteId }),
             headers: {
@@ -45,7 +45,7 @@ const Notes = () => {
 
 export const loader = async () => {
     try {
-        const response = await fetch('https://sevywagner.github.io/tutor-site-frontend/notes/get-users-notes', {
+        const response = await fetch('https://tutor-site-rest-api.herokuapp.com/notes/get-users-notes', {
             method: 'GET',
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token')
